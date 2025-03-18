@@ -13,6 +13,7 @@
 ![about](https://github.com/user-attachments/assets/9bbc1e03-a3a9-483b-b751-e3c8cc25f5b1)
 
 
+## Mathematical Formulation
 ![Screenshot (279)](https://github.com/user-attachments/assets/a39f6414-eef5-4317-9b21-bd77a175357c)
 
 
