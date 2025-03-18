@@ -6,6 +6,8 @@ This code is implemented in Python. It implements Novel concept of Stochastic Ro
 ############################################################
 ############################################################
 
+*_Published Paper Link_*
+ https://tijer.org/tijer/papers/TIJER2311104.pdf
  
 # WSN_Router
 A Novel Energy Efficient Routing Algorithm for Wireless Sensor Network
@@ -26,9 +28,50 @@ Algorithm:
 
 By implementing these rules, the algorithm aims to minimize the number of retransmissions required to deliver packets in the network, thus conserving the battery power of the nodes.
 
+# Equations.
+1.	I have assumed a certain number of WSN nodes, say N, are placed randomly in a plain so that each node has at least a few, say M, neighbouring nodes within its transmitting range. Average number of neighbouring nodes M can be calculated as per following equation
+
+![Screenshot (265)](https://github.com/user-attachments/assets/77de09ff-a5bc-4ce8-9f88-d9842f567761)
+
+Parameters:
+* N is total number of nodes in WSN area,
+* R is range of transmission, 
+* L and W are length and width of WSN area.
+
+2.	I assumed that each node participates in a localization procedure using algorithm used in [18, 19] at regular intervals to generate a list of all nodes N with their node-no and location information x and y using received signal strengths. Considering the received signal strength is inversely proportional to the square of the distance from the transmitting node. Given are the reference nodes (x1, y1), (x2, y2), and (x3, y3), and the distances d1, d2, and d3 from the unknown node (x, y) to these reference nodes. Table 4.1 shows the corresponding localization equations.
+   
+![Screenshot (266)](https://github.com/user-attachments/assets/c0067910-4dc8-4251-b41e-b15155446d3e)
 
 
-Quick Start Steps:
+
+3.	I have assumed that WSN has required connectivity using Poisson distributed node density and transmission range. The connectivity can be estimated using probability mass function P(X=k). Minimum number of neighbouring nodes required within transmission range of a relaying node for reliable connectivity is estimated using equation
+
+
+![Screenshot (267)](https://github.com/user-attachments/assets/e6528d16-7b6e-4b5a-9829-04d7bead7fe3)
+
+
+Parameters:
+* X is the random variable representing the number of nodes in range at any instance, 
+* k is minimum number nodes desired for connectivity, 
+* λ is the average number of nodes in transmission range.
+
+4.	I have assumed that any arbitrary node n1 sends a data packet to another arbitrary node n2. 
+The node n2 returns an acknowledged packet back to n1. 
+The packet headers are shown below. 
+
+Data Packet
+
+![Screenshot (268)](https://github.com/user-attachments/assets/e9e3a79a-4823-442d-bc09-6dbc484b9fa0)
+
+
+
+Acknoledgement Packet
+
+![Screenshot (269)](https://github.com/user-attachments/assets/c35f4cf3-75d5-4f33-923e-4bf4998afd7a)
+
+
+
+# Quick Start Steps:
 
 1. Download the zip file and unzip in a folder ‘WSN_Router’.
 2. Select ‘WsnRoutPwr.py’ file and load in VS Code
