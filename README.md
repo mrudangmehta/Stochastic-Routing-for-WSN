@@ -8,6 +8,13 @@
 
 
 
+![paper title](https://github.com/user-attachments/assets/6142cc8b-38d6-4e51-bb45-16c086f185af)
+
+
+
+
+![about](https://github.com/user-attachments/assets/9bbc1e03-a3a9-483b-b751-e3c8cc25f5b1)
+
 
 ![Screenshot (279)](https://github.com/user-attachments/assets/a39f6414-eef5-4317-9b21-bd77a175357c)
 
